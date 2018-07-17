@@ -1,10 +1,6 @@
 class InputNeuron {
 	constructor() {
-		this.input = 0;
-	}
-
-	get output() {
-		return this.input;
+		this.output = 0;
 	}
 }
 
@@ -47,7 +43,7 @@ module.exports = class PolyNet {
 
 	update(inputs) {
 		for(let i = 0; i < inputs.length; i++)
-			this.layers[0][i].input = inputs[i];
+			this.layers[0][i].output = inputs[i];
 
 		for(let i = 1; i < this.layers.length; i++) {
 			const previousLayer = this.layers[i - 1];
