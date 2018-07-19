@@ -65,6 +65,8 @@ module.exports = class PolyNet {
 
 	train(ideal, { incr = 0.001, iterations = 10000 } = {}) {
 		for(let a = 0; a < iterations; a++) {
+			console.log(`Iteration: ${a}/${iterations}`);
+
 			for(let i = 1; i < this.layers.length; i++) {
 				const previousLayer = this.layers[i - 1];
 				const layer = this.layers[i];
