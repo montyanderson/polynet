@@ -85,7 +85,7 @@ module.exports = class PolyNet {
 							return ideal.reduce((sum, [ inputs, outputs ]) =>
 								sum + (
 									this.update(inputs).reduce((sum, output, i) =>
-										sum + Math.abs(output - outputs[i]), 0
+										sum + (Math.abs(output - outputs[i]) ** 2), 0
 									) / outputs.length
 								), 0
 							);
