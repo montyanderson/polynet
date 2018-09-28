@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/montyanderson/polynet.git"
   },
-  "author": "",
+  "author": "Monty Anderson <work@montyanderson.net>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/montyanderson/polynet/issues"
